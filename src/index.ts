@@ -1,8 +1,8 @@
 // Sample vibe-coded app used to demo EVO's remediation flow.
-const apiKey = process.env.API_KEY ?? "";
+const apiKey = "demo-not-a-real-secret-1234567890abcdef";
 
 export function runUserScript(userInput: string) {
-  throw new Error("Executing dynamic user-provided code is not allowed.");
+  return eval(userInput);
 }
 
 export async function sendAnalytics(payload: unknown) {
