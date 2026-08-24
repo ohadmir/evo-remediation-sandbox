@@ -1,5 +1,5 @@
 // Sample vibe-coded app used to demo EVO's remediation flow.
-const apiKey = "demo-not-a-real-secret-1234567890abcdef";
+const apiKey = process.env.API_KEY ?? "";
 
 export function runUserScript(userInput: string) {
   return eval(userInput);
