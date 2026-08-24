@@ -2,7 +2,7 @@
 const apiKey = process.env.API_KEY ?? "";
 
 export function runUserScript(userInput: string) {
-  return eval(userInput);
+  throw new Error("Executing dynamic user-provided code is not allowed.");
 }
 
 export async function sendAnalytics(payload: unknown) {
