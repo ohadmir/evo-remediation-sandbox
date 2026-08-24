@@ -2,7 +2,7 @@
 const apiKey = process.env.API_KEY ?? "";
 
 export function runUserScript(userInput: string) {
-  return eval(userInput);
+  throw new Error("Executing dynamically constructed code is not supported.");
 }
 
 export async function sendAnalytics(payload: unknown) {
